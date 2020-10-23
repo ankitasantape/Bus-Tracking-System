@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>body {
+    background-image: url("blur.jpeg");
+    background-color: #cccccc;
+   }</style>
+
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-storage.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+  <h2><center>Admin Login</center></h2>
+  <form action="/action_page.php">
+    <div class="form-group">
+      <label for="email">Login Id</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter id" name="email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" name="remember"> Remember me</label>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+
+    <div class="mapouter">
+      <div class="gmap_canvas">
+      <iframe width="600"
+              height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=India-nagpur&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              frameborder="0" 
+              scrolling="no" 
+              marginheight="0" 
+              marginwidth="0"></iframe>
+      <a href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon/"></a></div>
+      <style>.mapouter{position:relative;text-align:center;height:500px;width:600px;}.gmap_canvas 
+      {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div>
+      
+  </form>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.5/lib/darkmode-js.min.js"></script>
+<script src="./script.js"></script>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.14.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/7.14.2/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+</body>
+</html>
