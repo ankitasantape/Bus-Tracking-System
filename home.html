@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Congratulations. your are Logged In.Successfully.</h1>
+        <script src="js/index.js"></script>
+<script>
+  firebase.auth().onAuthStateChanged(function(user)
+  {
+    if(user)
+    {
+      window.location.href ="StudLogin.html";
+    }
+  });
+</script>
+    </body>
+</html>
