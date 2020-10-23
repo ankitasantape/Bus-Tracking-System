@@ -1,0 +1,34 @@
+<html>
+    <head></head>
+        <body>
+            <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+
+            <script>
+              // Your web app's Firebase configuration
+              var firebaseConfig = {
+                apiKey: "AIzaSyAgNijEYh_BN5W77-cqkFoduw4Ip-IfOnk",
+                authDomain: "firemap-c9ce0.firebaseapp.com",
+                databaseURL: "https://firemap-c9ce0.firebaseio.com",
+                projectId: "firemap-c9ce0",
+                storageBucket: "firemap-c9ce0.appspot.com",
+                messagingSenderId: "571840093525",
+                appId: "1:571840093525:web:5e441de0af83d85fdca3dc",
+                measurementId: "G-6T19X0F7JB"
+              };
+              // Initialize Firebase
+              firebase.initializeApp(firebaseConfig);
+
+              function writeData(){
+                  firebase.database().ref("User").set({
+                      name: document.getElementById("nameField").value,
+                      age: document.getElementById("ageField").value
+                  });
+              }
+            </script>
+            <h1>User Database</h1>
+            <input type = "text" placeholder = "name" id = "namefield">
+            <input type = "text" placeholder = "age" id = "agefield">
+             <button onclick = "writeData()">Submit</button>
+        </body>
+
+</html>
